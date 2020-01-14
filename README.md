@@ -9,3 +9,5 @@ There are multiple implementations of "Discovery Service" (eureka, consul, zooke
  
  配置host
  127.0.0.1 discovery-server discovery-server2 discovery-client 
+ 
+ ha 高可用

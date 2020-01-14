@@ -18,6 +18,7 @@
 
     <modules>
         <module>learn-eureka-discovery-server</module>
+        <module>learn-eureka-discovery-server-slave</module>
         <module>learn-eureka-discovery-client</module>
     </modules>
 
