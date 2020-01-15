@@ -1,10 +1,10 @@
 
 server:
-  port: 5003
+  port: 5005
 
 spring:
   application:
-    name: eureka-discovery-client
+    name: ribbon-client
 
 eureka:
   client:
@@ -12,4 +12,4 @@ eureka:
       # EurekaServer的地址，现在是自己的地址，如果是集群，需要加上其它Server的地址。
       defaultZone: http://discovery-server:5001/eureka/
   instance:
-    hostname: discovery-client
+    hostname: ribbon-client
