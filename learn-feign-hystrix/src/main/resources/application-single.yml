@@ -1,0 +1,21 @@
+
+server:
+  port: 5008
+
+spring:
+  application:
+    name: feign-hystrix-client
+
+eureka:
+  client:
+    service-url:
+      # EurekaServer的地址，现在是自己的地址，如果是集群，需要加上其它Server的地址。
+      defaultZone: http://discovery-server:5001/eureka/
+  instance:
+    hostname: feign-hystrix-client
+
+# hystrix这个配置坑了我好久我用的Spring Cloud是Dalston版本SR1，比网上其他材料的版本要新，
+# 因为在新版本中Feign对Hystrix的支持默认是关闭的，所以要通过配置手动打开feign.hystrix.enabled=true，这样服务降级等功能才有效果
+feign:
+  hystrix:
+    enabled: true

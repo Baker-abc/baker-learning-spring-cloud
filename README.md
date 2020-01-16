@@ -12,3 +12,4 @@ There are multiple implementations of "Discovery Service" (eureka, consul, zooke
 * ribbon 负载均衡
 * ribbon hystrix 负载均衡 + 熔断
 * feign 负载均很
+* feign hystrix 负载均很 + 熔断

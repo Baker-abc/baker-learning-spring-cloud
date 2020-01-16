@@ -22,4 +22,10 @@ public class UserController {
         log.info("/user");
         return userService.getById();
     }
+
+    @GetMapping("/user/exception")
+    public Object getException() {
+        log.info("/exception");
+        throw new RuntimeException("主动抛出个异常");
+    }
 }
