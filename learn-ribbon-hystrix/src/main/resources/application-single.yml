@@ -13,3 +13,9 @@ eureka:
       defaultZone: http://discovery-server:5001/eureka/
   instance:
     hostname: ribbon-hystrix-client
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
