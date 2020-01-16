@@ -7,11 +7,8 @@ There are multiple implementations of "Discovery Service" (eureka, consul, zooke
  If eureka is on your classpath, they are effectively the same
  
  
- 配置host
- 127.0.0.1 discovery-server discovery-server2 discovery-client 
- 
- ha 高可用
- 
- ribbon 负载均衡
- 
-feign 负载均很
+* 配置host：127.0.0.1 discovery-server discovery-server2 discovery-client  
+* ha 高可用 
+* ribbon 负载均衡
+* ribbon hystrix 负载均衡 + 熔断
+* feign 负载均很
