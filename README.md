@@ -13,3 +13,5 @@ There are multiple implementations of "Discovery Service" (eureka, consul, zooke
  ha 高可用
  
  ribbon 负载均衡
+ 
+feign 负载均很

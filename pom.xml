@@ -22,6 +22,7 @@
         <module>learn-eureka-discovery-client</module>
         <module>learn-eureka-discovery-client-slave</module>
         <module>learn-ribbon</module>
+        <module>learn-feign</module>
     </modules>
 
     <properties>
