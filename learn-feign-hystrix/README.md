@@ -1,5 +1,0 @@
-
-
-hystrix这个配置坑了我好久我用的Spring Cloud是Dalston版本SR1，
-比网上其他材料的版本要新，因为在新版本中Feign对Hystrix的支持默认是关闭的，
-所以要通过配置手动打开feign.hystrix.enabled=true，这样服务降级等功能才有效果
