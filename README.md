@@ -4,19 +4,20 @@
 
 
 ## 如何启动
+* 配置hosts：127.0.0.1 discovery-server discovery-server-slave discovery-client ribbon-hystrix-client
 
 #### 单机
-* learn-eureka-discovery-server：single.yml启动  http://localhost:5001/eureka
-* learn-eureka-discovery-client：single.yml启动  http://localhost:5002/eureka
+* learn-eureka-discovery-server：single.yml启动  http://localhost:5001/
+* learn-eureka-discovery-client：single.yml启动  http://localhost:5002/
        
 #### 高可用（ribbon和或者feign选一种即可）
-* learn-eureka-discovery-server：ha.yml启动  http://localhost:5001/eureka
-* learn-eureka-discovery-server-slave：ha.yml启动  http://localhost:5002/eureka
+* learn-eureka-discovery-server：ha.yml启动  http://localhost:5001/
+* learn-eureka-discovery-server-slave：ha.yml启动  http://localhost:5002/
 * learn-eureka-discovery-client：ha.yml启动
-* learn-eureka-discovery-client-slave：ha.yml启动
-* learn-ribbon：ha.yml启动                        
+* learn-eureka-discovery-client-slave：ha.yml启动             
 * learn-ribbon-hystrix：ha.yml启动              
 * learn-hystrix-dashboard：ha.yml启动：http://localhost:5009/hystrix
+* learn-gateway-zuul：ha.yml启动
 
 ## 模块
 
@@ -31,6 +32,7 @@
 | learn-feign                         | feign负载均衡          | feign-client:5006             |
 | learn-feign-hystrix                 | feign负载均衡+熔断     | feign-hystrix-client:5008     |
 | learn-hystrix-dashboard             | 服务监控               | hystrix-dashboard:5009        |
+| learn-gateway-zuul                  | gateway               | gateway-zuul-client:5010        |
 
 
 ## 一些注意事项和说明

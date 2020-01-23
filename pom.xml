@@ -27,6 +27,7 @@
         <module>learn-feign-hystrix</module>
         <module>learn-hystrix-dashboard</module>
         <module>learn-hystrix-turbine</module>
+        <module>learn-gateway-zuul</module>
     </modules>
 
     <properties>
