@@ -26,6 +26,7 @@
         <module>learn-ribbon-hystrix</module>
         <module>learn-feign-hystrix</module>
         <module>learn-hystrix-dashboard</module>
+        <module>learn-hystrix-turbine</module>
     </modules>
 
     <properties>
